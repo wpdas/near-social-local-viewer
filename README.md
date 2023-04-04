@@ -33,3 +33,7 @@ let profile = socialGetr(`${accountId}/profile`);
   <span>{profile.name}</span> <span>(@{accountId})</span>
 </div>;
 ```
+
+## Good to know
+
+This project was inspired by [NearSocial Viewer](https://github.com/NearSocial/viewer)
