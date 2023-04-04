@@ -1,0 +1,5 @@
+1 - [Para testar] usar "npm link" para fazer os bin terem feito. Depois, o "ns-view" estara disponivel globalmente no node;
+2 - O servico usa o build deste projeto (pasta dist) + ns-view.js + copy-file.js junto com os modulos especificos
+como (nodemon, concurrently entre outros)
+3 - Para usar, basta ir no seu projeto, instalar esse pacote e executar o comando "ns-view path/to/MyWidget.jsx". O caminho
+para o widget deve ser relativo ao root do projeto principal
