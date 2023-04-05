@@ -140,7 +140,7 @@ function App(props) {
   };
 
   return (
-    <div className="App" style={{ marginTop: "24px" }}>
+    <div className="App">
       <Router basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route path="/">

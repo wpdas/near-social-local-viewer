@@ -43,7 +43,7 @@ export default function Viewer(props) {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container" style={{ marginTop: "24px" }}>
       <div className="row">
         <div className="d-inline-block position-relative overflow-hidden">
           <Widget key={`preview-${12}`} code={code} props={widgetProps} />
