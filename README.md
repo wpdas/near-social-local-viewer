@@ -6,7 +6,7 @@
 
 A CLI tool that allows you to run and test your Widgets locally using just your preferred code editor and your default browser.
 
-Tool destined only to applications that will run inside a Widget [(Near Social)](https://alpha.near.org/)
+Tool intended only for Widgets that will run within [Near Social](https://alpha.near.org/)
 
 **Install it using npm or yarn:**
 
