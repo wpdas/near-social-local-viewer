@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="md/demo.gif" />
-</p>
-
 # <img src='./md/near-social-local-viewer-logo.png' height='24' alt='NEAR Social Bridge Logo' /> NEAR Social Local Viewer
 
 [![Build Status](https://img.shields.io/github/actions/workflow/status/wpdas/near-social-local-viewer/publish.yml?style=for-the-badge&colorB=000000)](https://github.com/wpdas/near-social-local-viewer/actions?query=workflow%3Apublish)
@@ -52,7 +48,6 @@ const accountId = context.accountId || "wendersonpires.near";
 const profile = socialGetr(`${accountId}/profile`);
 
 const profileImage = `${IPFS_NEAR_SOCIAL_THUMBNAIL_URL}${profile.image.ipfs_cid}`;
-console.log(profileImage);
 
 return (
   <div>
@@ -61,6 +56,10 @@ return (
   </div>
 );
 ```
+
+<p align="center">
+  <img src="md/demo.gif" />
+</p>
 
 ## Good to know
 
