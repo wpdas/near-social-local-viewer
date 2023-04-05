@@ -31,7 +31,8 @@
     "react-router-dom": "^5.2.0",
     "serve": "^14.2.0",
     "shelljs": "^0.8.5",
-    "styled-components": "^5.3.6"
+    "styled-components": "^5.3.6",
+    "nodemon": "^2.0.22"
   },
   "scripts": {
     "serve": "webpack serve",
@@ -82,7 +83,6 @@
     "https-browserify": "^1.0.0",
     "mini-css-extract-plugin": "^2.2.2",
     "node-sass": "^7.0.3",
-    "nodemon": "^2.0.22",
     "os-browserify": "^0.3.0",
     "path-browserify": "^1.0.1",
     "postcss-loader": "^7.0.1",
