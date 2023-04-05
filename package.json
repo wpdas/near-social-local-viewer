@@ -1,6 +1,6 @@
 {
   "name": "@wpdas/near-social-local-viewer",
-  "version": "1.0.0-alpha2",
+  "version": "1.0.0-beta",
   "homepage": "/",
   "private": true,
   "dependencies": {
@@ -44,7 +44,7 @@
     "start": "npm run dev"
   },
   "bin": {
-    "ns-view": "ns-view.js"
+    "init-viewer": "init-viewer.js"
   },
   "eslintConfig": {
     "extends": [
