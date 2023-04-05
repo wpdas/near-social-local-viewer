@@ -1,6 +1,6 @@
 {
-  "name": "@wpdas/near-social-local-viewer",
-  "version": "1.0.0-beta",
+  "name": "near-social-local-viewer",
+  "version": "1.0.0-beta2",
   "homepage": "/",
   "private": true,
   "dependencies": {

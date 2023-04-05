@@ -3,3 +3,7 @@
 como (nodemon, concurrently entre outros)
 3 - Para usar, basta ir no seu projeto, instalar esse pacote e executar o comando "ns-view path/to/MyWidget.jsx". O caminho
 para o widget deve ser relativo ao root do projeto principal
+4 - BUILD: O build deve ser feito localmente antes de gerar um novo release. "yarn build"
+
+TODO:
+1 - Criar types

@@ -30,10 +30,14 @@ export default function Viewer(props) {
   // Live widget update
   useEffect(() => {
     const fetchCode = async () => {
-      const data = await fetch("http://localhost:9000");
-      const response = await data.json();
-      if (code !== response.code) {
-        setCode(response.code);
+      try {
+        const data = await fetch("http://localhost:9000");
+        const response = await data.json();
+        if (code !== response.code) {
+          setCode(response.code);
+        }
+      } catch (error) {
+        console.error("widget file not found");
       }
     };
 
