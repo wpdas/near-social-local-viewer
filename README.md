@@ -4,7 +4,7 @@
 [![Version](https://img.shields.io/npm/v/near-social-local-viewer?style=for-the-badge&colorB=000000)](https://www.npmjs.com/package/near-social-local-viewer)
 [![Downloads](https://img.shields.io/npm/dt/near-social-local-viewer.svg?style=for-the-badge&colorB=000000)](https://www.npmjs.com/package/near-social-local-viewer)
 
-A CLI tool that allows you to run and test your Widgets locally.
+A CLI tool that allows you to run and test your Widgets locally using just your preferred code editor and your default browser.
 
 Tool destined only to applications that will run inside a Widget [(Near Social)](https://alpha.near.org/)
 
@@ -42,7 +42,7 @@ VIEWER_PORT=3005 npx init-viewer widget/ProfileView.tsx
 
 ## Widget example
 
-Profile view
+Profile View
 
 ```jsx
 const IPFS_NEAR_SOCIAL_THUMBNAIL_URL =
