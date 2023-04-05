@@ -24,10 +24,6 @@ You can start by running the following command:
 
 ```
 npx init-viewer path/to/MyWidget.jsx
-
-#or
-
-init-viewer path/to/MyWidget.jsx
 ```
 
 The Viewer is going to open automatically on your default browser on port 3001.

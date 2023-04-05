@@ -1,27 +1,6 @@
 import React, { lazy, useEffect, useState } from "react";
 import { Widget } from "near-social-vm";
-
-const defaultCodeMessage = `
-return (
-  <div>
-    <p style={{ fontWeight: 600, color: "#AB2E28", fontFamily: "Courier new" }}>
-      No Widget file of type .jsx was found. You must run the following command
-      to inject your widget:
-      <span
-        style={{
-          background: "#000",
-          color: "#fff",
-          padding: "2px",
-          fontWeight: 400,
-        }}
-      >
-        yarn ns-viewer path/to/MyWidget
-      </span>
-    </p>
-  </div>
-);
-
-`;
+import { defaultCodeMessage } from "../../constants";
 
 export default function Viewer(props) {
   const [code, setCode] = useState(defaultCodeMessage);

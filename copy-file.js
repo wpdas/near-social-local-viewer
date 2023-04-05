@@ -13,6 +13,11 @@ if (!widgetFile) {
 const widgetJSX = path.join(widgetFile);
 const widgetTXT = path.join(__dirname, `cache.txt`);
 
+// Check if widget file exists
+if (!fs.existsSync(widgetJSX)) {
+  throw new Error(`The widget file was not found! -> ${widgetJSX}`);
+}
+
 fs.copyFile(widgetJSX, widgetTXT, (err) => {
   if (err) throw err;
 });
