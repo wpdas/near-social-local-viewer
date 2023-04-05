@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="md/demo.gif" />
+</p>
+
 # <img src='./md/near-social-local-viewer-logo.png' height='24' alt='NEAR Social Bridge Logo' /> NEAR Social Local Viewer
 
 [![Build Status](https://img.shields.io/github/actions/workflow/status/wpdas/near-social-local-viewer/publish.yml?style=for-the-badge&colorB=000000)](https://github.com/wpdas/near-social-local-viewer/actions?query=workflow%3Apublish)
