@@ -6,4 +6,15 @@ para o widget deve ser relativo ao root do projeto principal
 4 - BUILD: O build deve ser feito localmente antes de gerar um novo release. "yarn build"
 
 TODO:
-1 - Criar types
+1 - Criar types, algo como:
+
+```ts
+// index.d.ts file
+
+declare global {
+  var context: any;
+  function socialGetr(key: string): any;
+}
+
+export {};
+```

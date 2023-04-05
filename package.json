@@ -1,8 +1,21 @@
 {
   "name": "near-social-local-viewer",
-  "version": "1.0.0-beta2",
-  "homepage": "/",
-  "private": true,
+  "version": "1.0.0-rc",
+  "description": "A CLI tool that allows you to run and test your Near Social Widgets locally using just your preferred code editor and your default browser.",
+  "keywords": [
+    "near",
+    "social",
+    "cli",
+    "widget",
+    "local",
+    "tool",
+    "viewer",
+    "view",
+    "locally"
+  ],
+  "author": "Wenderson Pires wendersonpdas@gmail.com",
+  "license": "MIT",
+  "repository": "git://github.com/wpdas/near-social-local-viewer.git",
   "dependencies": {
     "@monaco-editor/react": "^4.4.6",
     "@near-wallet-selector/core": "^7.9.0",
