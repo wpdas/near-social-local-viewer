@@ -12,10 +12,10 @@ Tool intended only for Widgets that will run within [Near Social](https://alpha.
 
 ```
 # npm
-npm install near-social-local-viewer
+npm install near-social-local-viewer --save-dev
 
 # yarn
-yarn add near-social-local-viewer
+yarn add near-social-local-viewer -D
 ```
 
 ## Starting the Viewer
