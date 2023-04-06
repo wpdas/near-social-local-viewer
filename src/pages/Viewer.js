@@ -1,16 +1,20 @@
 import React, { lazy, useEffect, useState } from "react";
 import { Widget } from "near-social-vm";
 import { defaultCodeMessage } from "../../constants";
+import { useParams } from "react-router-dom";
 
 export default function Viewer(props) {
   const [code, setCode] = useState(defaultCodeMessage);
   const [widgetProps, setWidgetProps] = useState();
 
+  // Get the widget name to render
+  const { widget } = useParams();
+
   // Live widget update
   useEffect(() => {
     const fetchCode = async () => {
       try {
-        const data = await fetch("http://localhost:9000");
+        const data = await fetch(`http://localhost:9000/widget/get/${widget}`);
         const response = await data.json();
         if (code !== response.code) {
           setCode(response.code);

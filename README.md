@@ -25,22 +25,37 @@ yarn add near-social-local-viewer -D
 You can start by running the following command:
 
 ```
-npx init-viewer path/to/MyWidget.jsx
+npx init-viewer path/to/widgets/
 ```
 
-The Viewer is going to open automatically on your default browser on port 3001.
+The Viewer is going to open automatically and watch all the widgets inside `path/to/widgets/` folder.
 
 ## Changing the Viewer PORT
 
 You can change the viewer port:
 
 ```
-VIEWER_PORT=3005 npx init-viewer widget/ProfileView.tsx
+VIEWER_PORT=3005 npx init-viewer path/to/widgets/
 ```
 
-## Widget example
+## Widgets example
 
-Profile View
+Below is an example of 2 widgets with interactions:
+
+**UserNameAccountView**
+
+```jsx
+const userName = props.name;
+const userAccoundId = props.accountId;
+
+return (
+  <div>
+    <span>{userName}</span> <span>(@{userAccoundId})</span>
+  </div>
+);
+```
+
+**ProfileView**
 
 ```jsx
 const IPFS_NEAR_SOCIAL_THUMBNAIL_URL =
@@ -48,13 +63,19 @@ const IPFS_NEAR_SOCIAL_THUMBNAIL_URL =
 
 const accountId = context.accountId || "wendersonpires.near";
 const profile = socialGetr(`${accountId}/profile`);
-
 const profileImage = `${IPFS_NEAR_SOCIAL_THUMBNAIL_URL}${profile.image.ipfs_cid}`;
 
 return (
   <div>
     <img src={profileImage} alt="profile avatar" />
-    <span>{profile.name}</span> <span>(@{accountId})</span>
+    {/* Use another local or remote widget */}
+    <Widget
+      src={"wendersonpires.near/widget/NSLVWidget"}
+      props={{
+        src: "wendersonpires.near/widget/UserNameAccountView",
+        props: { name: "Wendz", accountId },
+      }}
+    />
   </div>
 );
 ```

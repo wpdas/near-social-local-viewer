@@ -1,9 +1,10 @@
 {
-  "main.js": "./main.74422fde172dd86cafec.bundle.js",
-  "runtime.js": "./runtime.bbfbb58ea768c7f79846.bundle.js",
+  "main.js": "./main.cb958f871d49be39155c.bundle.js",
+  "runtime.js": "./runtime.b36e8256867ea02d2b68.bundle.js",
   "assets/logo.png": "./assets/logo.png",
   "assets/favicon.png": "./assets/favicon.png",
   "favicon.png": "./favicon.png",
+  "near-social-local-viewer-logo.png": "./4c1a63d51125d3350431.png",
   "assets/index.html": "./assets/index.html",
   "index.html": "./index.html",
   "assets/manifest.json": "./assets/manifest.json",
