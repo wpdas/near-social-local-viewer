@@ -8,7 +8,7 @@ A CLI tool that allows you to run and test your Near Social Widgets locally usin
 
 Tool intended only for Widgets that will run within [Near Social](https://alpha.near.org/)
 
-Check out a demo app built using this tool [here](https://github.com/wpdas/chatv2-near-widget-app).
+Check out an example project using this tool [here](https://github.com/wpdas/ns-widgets-examples).
 
 **Install it using npm or yarn:**
 
