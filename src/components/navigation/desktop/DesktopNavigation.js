@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { Logotype } from "../Logotype";
 import { NavigationButton } from "../NavigationButton";
 import { ArrowUpRight } from "../../icons/ArrowUpRight";
 import { SignInButton } from "../SignInButton";
@@ -65,9 +64,11 @@ export function DesktopNavigation(props) {
     <StyledNavigation>
       <div className="container">
         <Link to="/" className="logo-link">
-          <Logotype />
+          <h4 style={{ margin: "0px", fontSize: "20px", color: "#fff" }}>
+            Widgets
+          </h4>
         </Link>
-        <div className="navigation-section">
+        <div className="navigation-section" style={{ marginLeft: "27%" }}>
           <NavigationButton href={props.documentationHref}>
             Documentation
             <ArrowUpRight />

@@ -18,6 +18,7 @@ import { useAccount, useInitNear, useNear, utils } from "near-social-vm";
 import Big from "big.js";
 import { NavigationWrapper } from "./components/navigation/NavigationWrapper";
 import { NetworkId, Widgets } from "./data/widgets";
+import WidgetsList from "./pages/WidgetsList";
 
 export const refreshAllowanceObj = {};
 const documentationHref = "https://social.near-docs.io/";
@@ -141,13 +142,16 @@ function App(props) {
 
   return (
     <div className="App">
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
         <Switch>
-          <Route path="/">
+          <Route path="/view/:widget*">
             <NavigationWrapper {...passProps} />
             <Viewer {...passProps} />
           </Route>
         </Switch>
+        <Route exact path="/">
+          <WidgetsList />
+        </Route>
       </Router>
     </div>
   );
