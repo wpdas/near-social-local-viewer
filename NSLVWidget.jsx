@@ -3,6 +3,7 @@
  * A tool that enables you to develop your widgets locally.
  * Learn more here: https://github.com/wpdas/near-social-local-viewer
  *
+ * This Widget lives here: https://near.social/#/wendersonpires.near/widget/NSLVWidget
  *
  * How it works:
  *
