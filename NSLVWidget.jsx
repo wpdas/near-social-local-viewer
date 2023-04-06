@@ -23,6 +23,12 @@
 
 const src = props.src;
 
+State.init({
+  code: null,
+  ready: false,
+  props: props.props,
+});
+
 if (!src) {
   return (
     <div>
@@ -49,23 +55,42 @@ if (!src) {
 
 const localWidgetPath = src.split("/");
 const localWidgetName = localWidgetPath[localWidgetPath.length - 1];
-const localWidgetSrc = fetch(
-  `http://localhost:9000/widget/get/${localWidgetName}`
-);
+
+const fetchCode = () => {
+  asyncFetch(`http://localhost:9000/widget/get/${localWidgetName}`)
+    .then((localWidgetSrc) => {
+      if (
+        localWidgetSrc &&
+        localWidgetSrc?.status === 200 &&
+        localWidgetSrc?.body?.code
+      ) {
+        // Set local widget code
+        State.update({ code: localWidgetSrc.body.code });
+
+        // If it's local (because its using local code server), refresh every 1 sec (to get most updated local widget)
+        setTimeout(() => {
+          fetchCode();
+        }, 1000);
+      }
+    })
+    .finally(() => {
+      State.update({ ready: true });
+    });
+};
+
+fetchCode();
 
 // Wait till it loads
-if (!localWidgetSrc) {
+if (!state.code) {
   return <div />;
 }
 
-if (
-  localWidgetSrc &&
-  localWidgetSrc?.status === 200 &&
-  localWidgetSrc?.body?.code
-) {
+if (state.ready && state.code) {
   // Render local widget
-  return <Widget code={localWidgetSrc.body.code} props={props} />;
+  return <Widget code={state.code} props={state.props} />;
 }
 
 // Render remote widget
-return <Widget src={src} props={props} />;
+if (state.ready && !state.code) {
+  return <Widget src={src} props={state.props} />;
+}
