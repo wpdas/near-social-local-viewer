@@ -81,7 +81,7 @@ return (
 ```
 
 <p align="center">
-  <img src="md/demo.gif" />
+  <img src="md/demo2.gif" />
 </p>
 
 ## Good to know
