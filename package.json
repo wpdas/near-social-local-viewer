@@ -60,6 +60,9 @@
   "bin": {
     "init-viewer": "init-viewer.js"
   },
+  "engines": {
+    "node": ">=16.10.0"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
