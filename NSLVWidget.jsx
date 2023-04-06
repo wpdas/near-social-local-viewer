@@ -26,7 +26,7 @@ const src = props.src;
 State.init({
   code: null,
   ready: false,
-  props: props.props,
+  props: props.srcProps || {},
 });
 
 if (!src) {

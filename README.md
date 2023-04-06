@@ -68,12 +68,12 @@ const profileImage = `${IPFS_NEAR_SOCIAL_THUMBNAIL_URL}${profile.image.ipfs_cid}
 return (
   <div>
     <img src={profileImage} alt="profile avatar" />
-    {/* Use another local or remote widget */}
+    {/* Using another local or remote widget */}
     <Widget
       src={"wendersonpires.near/widget/NSLVWidget"}
       props={{
         src: "wendersonpires.near/widget/UserNameAccountView",
-        props: { name: "Wendz", accountId },
+        srcProps: { name: "Wendz", accountId },
       }}
     />
   </div>
