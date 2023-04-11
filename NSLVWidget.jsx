@@ -11,7 +11,7 @@
  * 2 - Example of use:
  *
  * <Widget
- *   src={"wendersonpires.near/widget/NSLVWidget"}
+ *   src="wendersonpires.near/widget/NSLVWidget"
  *   props={{ src: "wendersonpires.near/widget/Profile" }}
  * />
  *
@@ -81,7 +81,7 @@ const fetchCode = () => {
 fetchCode();
 
 // Wait till it loads
-if (!state.code) {
+if (!state.ready) {
   return <div />;
 }
 

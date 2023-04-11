@@ -70,7 +70,7 @@ return (
     <img src={profileImage} alt="profile avatar" />
     {/* Using another local or remote widget */}
     <Widget
-      src={"wendersonpires.near/widget/NSLVWidget"}
+      src="wendersonpires.near/widget/NSLVWidget"
       props={{
         src: "wendersonpires.near/widget/UserNameAccountView",
         srcProps: { name: "Wendz", accountId },
