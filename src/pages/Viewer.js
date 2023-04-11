@@ -37,7 +37,12 @@ export default function Viewer(props) {
 
   // Get props from url
   useEffect(() => {
-    const params = new URLSearchParams(window.location.hash.replace("#/", ""));
+    const params = new URLSearchParams(
+      // Get the params only
+      window.location.hash
+        .replace(`#/view/${widget}/`, "")
+        .replace(`#/view/${widget}`, "")
+    );
     const _props = {};
     const keys = params.keys();
     params.forEach((value) => {
