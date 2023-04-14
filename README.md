@@ -10,6 +10,8 @@ Tool intended only for Widgets that will run within [Near Social](https://alpha.
 
 Check out an example project using this tool [here](https://github.com/wpdas/ns-widgets-examples).
 
+**Node:** 16.10.0
+
 **Install it using npm or yarn:**
 
 ```
