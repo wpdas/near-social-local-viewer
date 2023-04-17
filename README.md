@@ -26,8 +26,12 @@ yarn add near-social-local-viewer -D
 
 You can start by running the following command:
 
-```
+```sh
+# mainnet
 npx init-viewer path/to/widgets/
+
+# testnet
+npx init-viewer path/to/widgets/ --testnet
 ```
 
 The Viewer is going to open automatically and watch all the widgets inside `path/to/widgets/` folder.
@@ -85,6 +89,26 @@ return (
 <p align="center">
   <img src="md/demo2.gif" />
 </p>
+
+## Testnet
+
+Use `wendersonpires.testnet/widget/NearSocialBridgeCore` while creating your application using **testnet**. E.g.:
+
+```jsx
+const accountId = context.accountId || "wendersonpires.testnet";
+
+return (
+  <div>
+    <Widget
+      src="wendersonpires.testnet/widget/NSLVWidget"
+      props={{
+        src: "wendersonpires.testnet/widget/UserNameAccountView",
+        srcProps: { name: "Wendz", accountId },
+      }}
+    />
+  </div>
+);
+```
 
 ## Good to know
 

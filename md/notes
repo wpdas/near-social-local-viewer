@@ -21,3 +21,9 @@ export {};
 ```
 
 2 - Habilidade de usar mais de um widget local
+
+PRIORIDADE:
+
+1 - Rodar comando para limpar cache quando encerrar o programa
+https://gist.github.com/hyrious/30a878f6e6a057f09db87638567cb11a
+Usar o SIGINT
