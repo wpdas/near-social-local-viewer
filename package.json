@@ -1,6 +1,6 @@
 {
   "name": "near-social-local-viewer",
-  "version": "2.1.2",
+  "version": "2.1.3",
   "description": "A CLI tool that allows you to run and test your Near Social Widgets locally using just your preferred code editor and your default browser.",
   "keywords": [
     "near",
