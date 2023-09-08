@@ -32,3 +32,4 @@ neardev
 .DS_Store
 
 cache.txt
+/cache
